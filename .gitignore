@@ -1,0 +1,7 @@
+private/db_config.php
+*.pem
+.env
+vendor/
+composer.lock
+.DS_Store
+Thumbs.db

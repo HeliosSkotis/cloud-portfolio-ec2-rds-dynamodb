@@ -1,0 +1,31 @@
+CREATE DATABASE IF NOT EXISTS portfolio_db; USE portfolio_db;
+DROP TABLE IF EXISTS academic_records;
+CREATE TABLE academic_records (id INT AUTO_INCREMENT PRIMARY KEY, code VARCHAR(10) NOT NULL, subject VARCHAR(120) NOT NULL, credits INT NOT NULL, grade VARCHAR(2) NOT NULL, semester TINYINT NOT NULL);
+INSERT INTO academic_records (code,subject,credits,grade,semester) VALUES
+('CHY1009','Chemistry and Environmental Studies',4,'B',1),
+('CSE1012','Problem Solving using Python',4,'A',1),
+('ECE1002','Fundamentals of Electrical & Electronics Eng.',4,'A',1),
+('ENG1002','English for Effective Communication',3,'S',1),
+('MAT1001','Calculus for Engineers',4,'B',1),
+('STS1004','Introduction to Problem Solving',3,'B',1),
+('CSE2005','Object Oriented Programming using JAVA',4,'B',2),
+('ECE1003','Digital Logic Design',4,'A',2),
+('ENG2001','English for Professional Communication',3,'B',2),
+('MAT1002','Differential & Difference Equations',4,'A',2),
+('PHY1008','Modern Physics',4,'S',2),
+('STS1009','Quantitative, Logical & Verbal Ability',3,'S',2),
+('CSE1022','Introduction to Programming',3,'A',3),
+('CSE2001','Data Structures and Algorithms',4,'A',3),
+('CSE3002','Artificial Intelligence',3,'A',3),
+('ECS2002','Engineering Clinics - System Design',2,'B',3),
+('MAT1003','Discrete Mathematical Structures',4,'S',3),
+('MGT1040','Entrepreneurship',2,'S',3),
+('STS2008','Numerical Ability & Cognitive Intelligence',3,'A',3),
+('CSE1005','Software Engineering',4,'S',4),
+('CSE2007','Database Management Systems',4,'S',4),
+('CSE3008','Introduction to Machine Learning',4,'A',4),
+('ECE2002','Computer Organization & Architecture',4,'S',4),
+('EXC1038','Book Club - Art of Reading',2,'P',4),
+('MAT1011','Applied Statistics',4,'A',4),
+('MGT1001','Ethics and Values',2,'P',4),
+('STS2009','Arithmetic Problem Solving Skills',3,'S',4);
